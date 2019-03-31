@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/transparent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:paddingBottom="16dp"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:paddingTop="16dp">
+
+        <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+          <TextView
+                  android:id="@+id/verfiy_Tv"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="Verfiy "
+                    android:textSize="22sp"
+                    android:textColor="#e44648"
+          />
+        </LinearLayout>
+
+
+    <LinearLayout
+            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                           >
+
+                        <TextView
+                                android:padding="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:text="Waiting to automatically detect an SMS sent to "
+                                android:textSize="17sp" />
+
+       <LinearLayout android:layout_width="match_parent"
+                     android:orientation="horizontal"
+                     android:gravity="center"
+                     android:padding="8dp"
+                     android:layout_height="wrap_content">
+           <TextView
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        android:text="+"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/waiting_tv"
+
+        />
+           <TextView
+                   android:id="@+id/wrong_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:text="Wrong number?"
+                android:layout_marginLeft="8dp"
+                  android:layout_gravity="center"
+                   android:gravity="center"
+                  android:textColor="@android:color/holo_blue_light"
+                        />
+       </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+    <TextView
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+
+            android:id="@+id/counter_downTv"/>
+    <EditText
+            android:id="@+id/sent_codeEt"
+            android:hint="Enter verification code "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:imeActionLabel="Send"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:textSize="20sp" />
+    <Button
+            android:id="@+id/verification_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#e44648"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="send verification code"
+            android:textStyle="normal" />
+
+    <Button
+            android:id="@+id/resend_btn"
+            android:enabled="true"
+
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#e86648"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Resend SMS"
+            android:textStyle="normal" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
